@@ -13,55 +13,60 @@ function createControls(){
 //update controls
 gameState.keydown = 0;
 var registerOnce;
+var switch2;
 function updateControls(){
 
-    //debugging commands 
+    // //debugging commands 
 
-    //C = win condition met
-    if(gameState.keys.C.isDown){
-        for(var i in gameState.winningItems){
-            gameState.winningItems[i].completed = true;
-        };
-    };
-    //T = time to 0
-    if(gameState.keys.T.isDown){
-        gameState.totalTime = 1;
-    };
+    // //C = win condition met
+    // if(gameState.keys.C.isDown){
+    //     for(var i in gameState.winningItems){
+    //         gameState.winningItems[i].completed = true;
+    //     };
+    // };
+    // //T = time to 0
+    // if(gameState.keys.T.isDown){
+    //     gameState.totalTime = 1;
+    // };
 
-    //I = add target item to inventory
-    if(gameState.keys.I.isDown){
-        if(!registerOnce){
-            addItem.call(this, gameState.winningItems[gameState.itemcounter]);
-            gameState.itemcounter+= 1;
-            registerOnce = true;
-        }
-    };
-    if(gameState.keys.I.isUp){
-        registerOnce = false;
-    }
+    // //I = add target item to inventory
+    // if(gameState.keys.I.isDown){
+    //     if(!registerOnce){
+    //         addItem.call(this, gameState.winningItems[gameState.itemcounter]);
+    //         gameState.itemcounter+= 1;
+    //         registerOnce = true;
+    //     }
+    // };
+    // if(gameState.keys.I.isUp){
+    //     registerOnce = false;
+    // }
 
-    //debugging commands ^^
+    // //debugging commands ^^
 
     if(gameState.keys.A.isDown){
         gameState.keydown = 1;
         gameState.player.setVelocityX(-100)
+        gameState.player.setVelocityY(0);
         gameState.player.anims.play('moveleft', true);
         return
 
     }else if(gameState.keys.D.isDown){
         gameState.keydown = 2;
         gameState.player.setVelocityX(100)
+        gameState.player.setVelocityY(0);
         gameState.player.anims.play('moveright', true);
         return
 
     }else if(gameState.keys.W.isDown){
         gameState.keydown = 3;
+        gameState.player.setVelocityX(0);
         gameState.player.setVelocityY(-100);
         gameState.player.anims.play('moveup', true);
         return
 
     }else if(gameState.keys.S.isDown){
         gameState.keydown = 4;
+        gameState.player.setVelocityX(0);
         gameState.player.setVelocityY(100)
         gameState.player.anims.play('movedown', true);
         return
@@ -69,7 +74,6 @@ function updateControls(){
     else{
         gameState.player.setVelocityX(0);
         gameState.player.setVelocityY(0);
-
         if(gameState.keydown == 1){
             gameState.player.anims.play('leftidle', true);
         }else if(gameState.keydown == 2){
