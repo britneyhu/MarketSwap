@@ -1,7 +1,22 @@
 <!DOCTYPE html>
 <html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/phaser@3.60.0/dist/phaser-arcade-physics.min.js"></script>
+</head>
+<body style="background-color:darkslategray;">
+    <div>
+        <p>
+            <center style="color:white; font-size: 30px; font-family: verdana;">MARKET SWAP</center>
+        </p>
+    </div>
+    <div id='game'>
+        {% load static %}
+        <script src="{% static '/js/startScene.js' %}" type="text/javascript" async></script>
+        <script src="{% static '/js/credits.js' %}" type="text/javascript" async></script>
+        <script src="{% static '/js/scene1.js' %}" type="text/javascript" async></script>
+        <script src="{% static '/js/game.js' %}" type="text/javascript" async></script>
+    </div>
+    
+
 </body>
 </html>
