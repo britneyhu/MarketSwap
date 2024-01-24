@@ -1,21 +1,73 @@
 <!DOCTYPE html>
 <html>
 <head>
+    {% load static %}
+    <link rel="stylesheet" href="static'/css/style.css">
     <script src="https://cdn.jsdelivr.net/npm/phaser@3.60.0/dist/phaser-arcade-physics.min.js"></script>
 </head>
-<body style="background-color:darkslategray;">
-    <div>
-        <p>
-            <center style="color:white; font-size: 30px; font-family: verdana;">MARKET SWAP</center>
-        </p>
-    </div>
-    <div id='game'>
-        <script src="static/js/startScene.js" type="text/javascript" async></script>
-        <script src="static/js/credits.js" type="text/javascript" async></script>
-        <script src="static/js/scene1.js" type="text/javascript" async></script>
-        <script src="static/js/game.js" type="text/javascript" async></script>
-    </div>
-    
 
+<body class="background">
+    <div class="background2">
+
+        <div id="game" class="game">
+            {% load static %}
+            <script src="static/js/startScene.js" type="text/javascript" async></script>
+            <script src="static/js/credits.js" type="text/javascript" async></script>
+            <script src="static/js/scene1.js" type="text/javascript" async></script>
+            <script src="static/js/game.js" type="text/javascript" async></script>
+        </div>
+
+        <div class="description">
+            <p>Embark on a pixelated medieval adventure to you trade your way to success. As you navigate the town and terrain, keep your eyes peeled for special items that can help you unlock the coveted goal items. Are you ready to take on the challenge and claim your rightful place as a master trader?</p>
+        </div>
+
+        <div class="credits">
+            <p>Game Created by <a href="https://github.com/britneyhu" target = _blank>Britney Hu</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Most of the art in this game is free and open source content from <a href="https://opengameart.org/" target = _blank>OpenGameArt</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="./credits.html" target = _blank>Full Art Credits</a></p>
+        </div>
+           
+        <div class="title">
+            <p>Controls</p>
+        </div>
+
+        <div class="container">
+            <div class="column">
+                <p>To move: WASD</p>
+                <img src="static/images/ui/controls.png">
+            </div>
+            <div class="column">
+                <p>Interact with items and shops: Mouse</p>
+                <img class="cursorImage" src="static/images/ui/defaultCursor.png">
+            </div>
+        </div>
+
+        <div class="title">
+            <p>How to Play</p>
+        </div>
+
+        <div class="container">
+            <div class="column">
+                <p>Talk to shop owners and take note of what items they want to trade</p>
+                <img class="shopImage" src="static/images/shops/blueShop.png">
+                <p>Find items throughout the map or trade your way to them</p>
+                <img class="swapImage" src="static/images/ui/shopSwap.png">
+            </div>
+            <div class="column">
+                <p>Collecting special items on the ground adds 30 seconds and earning a goal item adds 60 seconds</p>
+                <img src="static/images/items/tile148.png">
+                <p>Obtain all the goal items before the timer runs out to win!</p>
+                <img src="static/images/items/tile151.png">
+            </div>
+        </div>
+
+        <div class="resources">
+            <div class="githubIcon">
+                <img class="githubImage" src="static/images/ui/githubIcon.png">
+            </div>
+            <div class="githubLink">
+                <a href="https://github.com/britneyhu" target= _blank>github.com/britneyhu</a>
+            </div>
+        </div>
+
+    </div>
 </body>
 </html>
