@@ -17,15 +17,15 @@
     min-height: 100%;
 }
 
-a:link {
+a.link{
     color: #FF7474;
     text-decoration: underline;
   }
   
-  a:visited {
+a:visited.link {
     color: #FF7474;
     text-decoration: underline;
-  }
+}
 
 /* .game{
     margin: 0 auto;
@@ -117,4 +117,119 @@ a:link {
 .githubImage{
     width:20px;
     height:20px;
+}
+
+.backButton{
+    display: inline-block;
+}
+
+.button{
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-left: 20px;
+    vertical-align: bottom;
+    position: fixed;
+    top: 40px;
+    background-color: #FF7474;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-family: 'Inknut Antiqua', serif;
+    font-size: 15px;
+}
+
+.button:hover{
+    background-color: #cc5c5c
+}
+
+.creditsTitle{
+    display: inline-block;
+    margin: 0 auto;
+    padding-left: 40%;
+    font-family: 'Inknut Antiqua', serif;
+    font-size: 40px;
+    line-height: 1px;
+}
+
+.creditsSubtitle{
+    margin: 0 auto;
+    margin-top: 60px;
+    text-align: center;
+    font-family: 'Inknut Antiqua', serif;
+    font-size: 25px;
+    line-height: 1px;
+}
+
+hr.subtitleLine{
+    background-color: black;
+    border: none;
+    width: 30%;
+    height:2px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.creditTitle{
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Inknut Antiqua', serif;
+    font-size: 18px;
+    line-height: 1px;
+}
+
+.artists{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Inknut Antiqua', serif;
+    font-size: 12px;
+    line-height: 13px;
+    max-width: 50%;
+    word-wrap: break-word;
+}
+
+a.artistLink{
+    color: #FF7474;
+    text-decoration: underline;
+    line-height: 25px;
+}
+
+a.artistLink:visited{
+    color: #FF7474;
+    text-decoration: underline;
+    line-height: 25px;
+}
+
+.artistLinks{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Inknut Antiqua', serif;
+    font-size: 12px;
+    max-width: 95%;
+    line-height: 1px;
+}
+
+.assetLink{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Inknut Antiqua', serif;
+    font-size: 12px;
+    line-height: 1px;
+}
+
+hr.creditLine{
+    background-color: black;
+    border: none;
+    width: 8%;
+    height:2px;
+    margin-top: 20px;
+    margin-bottom: 40px;
 }
