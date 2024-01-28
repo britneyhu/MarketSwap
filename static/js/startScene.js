@@ -44,17 +44,17 @@ class startScene extends Phaser.Scene{
 
         //background image
         gameState.startSceneBackground = this.add.image(0, 0, 'startSceneBackground');
-        Phaser.Display.Align.In.Center(gameState.startSceneBackground, this.add.zone(650, 300, 1300, 600), 0, 0);
+        Phaser.Display.Align.In.Center(gameState.startSceneBackground, this.add.zone(564, 308, 1128, 615), 0, 0);
 
         //title
         // gameState.startText = this.add.text(440, 540, 'Market Swap Start Scene', {font: "50px Verdana", fill: "#FFFFFF"});
-        // Phaser.Display.Align.In.TopCenter(gameState.startText, this.add.zone(650, 300, 1300, 600), 0, -10);
+        // Phaser.Display.Align.In.TopCenter(gameState.startText, this.add.zone(564, 308, 1128, 615), 0, -10);
         gameState.title = this.add.image(0, 0, 'title');
-        Phaser.Display.Align.In.TopCenter(gameState.title, this.add.zone(650, 300, 1300, 600), 0, -10);
+        Phaser.Display.Align.In.TopCenter(gameState.title, this.add.zone(564, 308, 1128, 615), 0, -10);
 
         //start button
         gameState.startButton = this.add.image(100, 100, 'startButton');
-        Phaser.Display.Align.In.Center(gameState.startButton, this.add.zone(650, 300, 1300, 600), 0, 0);
+        Phaser.Display.Align.In.Center(gameState.startButton, this.add.zone(564, 308, 1128, 615), 0, 0);
         gameState.startButton.setInteractive();
 
         gameState.startButton.on('pointerover', () =>{
@@ -73,7 +73,7 @@ class startScene extends Phaser.Scene{
         });
         //credits button
         gameState.creditsButton = this.add.image(100, 100, 'creditsButton');
-        Phaser.Display.Align.In.Center(gameState.creditsButton, this.add.zone(650, 300, 1300, 600), 0, 120);
+        Phaser.Display.Align.In.Center(gameState.creditsButton, this.add.zone(564, 308, 1128, 615), 0, 120);
         gameState.creditsButton.setInteractive();
 
         gameState.creditsButton.on('pointerover', () =>{

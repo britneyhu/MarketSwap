@@ -51,7 +51,7 @@ function addItem(item){
                 function destroytimetext(){
                     timeText.destroy();
                 };
-                this.time.delayedCall(3000, destroytimetext, this);
+                this.time.delayedCall(3080, destroytimetext, this);
         
                 var itemText = this.add.text(440, 540, `${item.name}`, {font: "20px Verdana", fill: "#000000"});
                 Phaser.Display.Align.In.Center(itemText, gameState.inventory, 0 , -45);
@@ -59,7 +59,7 @@ function addItem(item){
                 function destroyitemtext(){
                     itemText.destroy();
                 };
-                this.time.delayedCall(3000, destroyitemtext, this);
+                this.time.delayedCall(3080, destroyitemtext, this);
 
             });
 
@@ -120,7 +120,7 @@ function addItem(item){
                 function destroytimetext(){
                     timeText.destroy();
                 };
-                this.time.delayedCall(3000, destroytimetext, this);
+                this.time.delayedCall(3080, destroytimetext, this);
         
                 var itemText = this.add.text(440, 540, `${item.name}`, {font: "20px Verdana", fill: "#000000"});
                 Phaser.Display.Align.In.Center(itemText, gameState.inventory, 0 , -45);
@@ -128,7 +128,7 @@ function addItem(item){
                 function destroyitemtext(){
                     itemText.destroy();
                 };
-                this.time.delayedCall(3000, destroyitemtext, this);
+                this.time.delayedCall(3080, destroyitemtext, this);
 
             });
 
@@ -189,7 +189,7 @@ function addItem(item){
                 function destroytimetext(){
                     timeText.destroy();
                 };
-                this.time.delayedCall(3000, destroytimetext, this);
+                this.time.delayedCall(3080, destroytimetext, this);
         
                 var itemText = this.add.text(440, 540, `${item.name}`, {font: "20px Verdana", fill: "#000000"});
                 Phaser.Display.Align.In.Center(itemText, gameState.inventory, 0 , -45);
@@ -197,7 +197,7 @@ function addItem(item){
                 function destroyitemtext(){
                     itemText.destroy();
                 };
-                this.time.delayedCall(3000, destroyitemtext, this);
+                this.time.delayedCall(3080, destroyitemtext, this);
 
             });
 
@@ -258,7 +258,7 @@ function addItem(item){
                 function destroytimetext(){
                     timeText.destroy();
                 };
-                this.time.delayedCall(3000, destroytimetext, this);
+                this.time.delayedCall(3080, destroytimetext, this);
         
                 var itemText = this.add.text(440, 540, `${item.name}`, {font: "20px Verdana", fill: "#000000"});
                 Phaser.Display.Align.In.Center(itemText, gameState.inventory, 0 , -45);
@@ -266,7 +266,7 @@ function addItem(item){
                 function destroyitemtext(){
                     itemText.destroy();
                 };
-                this.time.delayedCall(3000, destroyitemtext, this);
+                this.time.delayedCall(3080, destroyitemtext, this);
 
             });
 
@@ -327,7 +327,7 @@ function addItem(item){
                 function destroytimetext(){
                     timeText.destroy();
                 };
-                this.time.delayedCall(3000, destroytimetext, this);
+                this.time.delayedCall(3080, destroytimetext, this);
         
                 var itemText = this.add.text(440, 540, `${item.name}`, {font: "20px Verdana", fill: "#000000"});
                 Phaser.Display.Align.In.Center(itemText, gameState.inventory, 0 , -45);
@@ -335,7 +335,7 @@ function addItem(item){
                 function destroyitemtext(){
                     itemText.destroy();
                 };
-                this.time.delayedCall(3000, destroyitemtext, this);
+                this.time.delayedCall(3080, destroyitemtext, this);
 
             });
 
@@ -396,7 +396,7 @@ function addItem(item){
                 function destroytimetext(){
                     timeText.destroy();
                 };
-                this.time.delayedCall(3000, destroytimetext, this);
+                this.time.delayedCall(3080, destroytimetext, this);
         
                 var itemText = this.add.text(440, 540, `${item.name}`, {font: "20px Verdana", fill: "#000000"});
                 Phaser.Display.Align.In.Center(itemText, gameState.inventory, 0 , -45);
@@ -404,7 +404,7 @@ function addItem(item){
                 function destroyitemtext(){
                     itemText.destroy();
                 };
-                this.time.delayedCall(3000, destroyitemtext, this);
+                this.time.delayedCall(3080, destroyitemtext, this);
 
             });
 
@@ -460,7 +460,7 @@ function addItem(item){
                 x: gameState.blueshield.sprite.x,
                 y: gameState.blueshield.sprite.y,
                 ease: 'expo.out',
-                duration: 3000,
+                duration: 3080,
                 onComplete: function(){
                     removeItem.call(this, item);
                     item.sprite.setTint(0xFFFFFF);
@@ -474,7 +474,7 @@ function addItem(item){
                 x: gameState.bluehelmet.sprite.x,
                 y: gameState.bluehelmet.sprite.y,
                 ease: 'expo.out',
-                duration: 3000,
+                duration: 3080,
                 onComplete: function(){
                     removeItem.call(this, item);
                     item.sprite.setTint(0xFFFFFF);
@@ -488,7 +488,7 @@ function addItem(item){
                 x: gameState.firesword.sprite.x,
                 y: gameState.firesword.sprite.y,
                 ease: 'expo.out',
-                duration: 3000,
+                duration: 3080,
                 onComplete: function(){
                     removeItem.call(this, item);
                     item.sprite.setTint(0xFFFFFF);
@@ -502,7 +502,7 @@ function addItem(item){
                 x: gameState.bookofdeath.sprite.x,
                 y: gameState.bookofdeath.sprite.y,
                 ease: 'expo.out',
-                duration: 3000,
+                duration: 3080,
                 onComplete: function(){
                     removeItem.call(this, item);
                     item.sprite.setTint(0xFFFFFF);
@@ -516,7 +516,7 @@ function addItem(item){
                 x: gameState.royalcrown.sprite.x,
                 y: gameState.royalcrown.sprite.y,
                 ease: 'expo.out',
-                duration: 3000,
+                duration: 3080,
                 onComplete: function(){
                     removeItem.call(this, item);
                     item.sprite.setTint(0xFFFFFF);
@@ -580,7 +580,7 @@ function addShopWindow(shop){
         //create shop window
         gameState.shopWindow = this.add.sprite(500, 100, 'shopWindow');
         gameState.shopWindow.setScrollFactor(0);
-        Phaser.Display.Align.In.Center(gameState.shopWindow, this.add.zone(650, 300, 1300, 600));
+        Phaser.Display.Align.In.Center(gameState.shopWindow, this.add.zone(564, 308, 1128, 615));
 
         //create shop scene
         gameState.shopScene = this.add.sprite(500, 100, shop.sceneTexture);
@@ -693,7 +693,7 @@ function addShopWindow(shop){
         //create shop window
         gameState.shopWindow = this.add.sprite(500, 100, 'shopWindow');
         gameState.shopWindow.setScrollFactor(0);
-        Phaser.Display.Align.In.Center(gameState.shopWindow, this.add.zone(650, 300, 1300, 600));
+        Phaser.Display.Align.In.Center(gameState.shopWindow, this.add.zone(564, 308, 1128, 615));
 
         //create shop scene
         gameState.shopScene = this.add.sprite(500, 100, shop.sceneTexture);
