@@ -3,6 +3,9 @@ class scene1 extends Phaser.Scene{
         super({key: 'scene1'});
     }
 
+//coding
+//add elements to hmtl
+
     preload(){
         //load game functions
         this.load.script('gameFunctions', 'static/js/gameFunctions.js');

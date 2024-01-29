@@ -125,7 +125,7 @@ function createCameras(){
 
 //create winning item text
 function createWinningItems(){
-    gameState.winningItemsBackdrop = this.add.rectangle(0, 0, 50, 308, 0xFFFFFF);
+    gameState.winningItemsBackdrop = this.add.rectangle(0, 0, 50, 300, 0xFFFFFF);
     gameState.winningItemsBackdrop.setScrollFactor(0);
     Phaser.Display.Align.In.LeftCenter(gameState.winningItemsBackdrop, this.add.zone(564, 308, 1128, 615), 0, 0);
 
@@ -379,7 +379,7 @@ function createMenuIcon(){
 
 //create timer
 function createTimer(){
-    gameState.totalTime = 615;
+    gameState.totalTime = 600;
     gameState.timerDisplayBackdrop = this.add.rectangle(0, 0, 80, 30, 0xFFFFFF);
     gameState.timerDisplayBackdrop.setScrollFactor(0);
     Phaser.Display.Align.In.TopCenter(gameState.timerDisplayBackdrop, this.add.zone(564, 308, 1128, 615), 0, -5);

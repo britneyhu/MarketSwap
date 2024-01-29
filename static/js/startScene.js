@@ -48,7 +48,7 @@ class startScene extends Phaser.Scene{
 
         //title
         // gameState.startText = this.add.text(440, 540, 'Market Swap Start Scene', {font: "50px Verdana", fill: "#FFFFFF"});
-        // Phaser.Display.Align.In.TopCenter(gameState.startText, this.add.zone(564, 308, 1128, 615), 0, -10);
+        // Phaser.Display.Align.In.TopCenter(gameState.startText, this.add.zone(650, 300, 1300, 600), 0, -10);
         gameState.title = this.add.image(0, 0, 'title');
         Phaser.Display.Align.In.TopCenter(gameState.title, this.add.zone(564, 308, 1128, 615), 0, -10);
 
