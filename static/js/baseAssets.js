@@ -127,7 +127,7 @@ function createCameras(){
 function createWinningItems(){
     gameState.winningItemsBackdrop = this.add.rectangle(0, 0, 50, 300, 0xFFFFFF);
     gameState.winningItemsBackdrop.setScrollFactor(0);
-    Phaser.Display.Align.In.LeftCenter(gameState.winningItemsBackdrop, this.add.zone(564, 308, 1128, 615), 0, 0);
+    Phaser.Display.Align.In.LeftCenter(gameState.winningItemsBackdrop, this.add.zone(650, 300, 1300, 600), 0, 0);
 
     gameState.winningItemsText = this.add.text(0, 0, `Target\nItems`, {font: "12px Verdana", fill: "#000000", align: "center"});
     gameState.winningItemsText.setScrollFactor(0);
@@ -171,7 +171,7 @@ function createInventory(){
     // gameState.inventory = this.add.rectangle(440, 550, 275, 50, 0x000000);
     gameState.inventory = this.add.sprite(440, 550, 'inventory');
     gameState.inventory.setScrollFactor(0);
-    Phaser.Display.Align.In.BottomCenter(gameState.inventory, this.add.zone(564, 308, 1128, 615), 0, -10);
+    Phaser.Display.Align.In.BottomCenter(gameState.inventory, this.add.zone(650, 300, 1300, 600), 0, -10);
     
     //slot1
     gameState.slot1 = this.add.sprite(440, 550, 'inventorySlot');
@@ -288,7 +288,7 @@ gameState.menuWindowOpen = false;
 function createMenuIcon(){
     gameState.menuIcon = this.add.image(100, 100, 'menuIcon');
     gameState.menuIcon.setScrollFactor(0);
-    Phaser.Display.Align.In.TopRight(gameState.menuIcon, this.add.zone(564, 308, 1128, 615), 0, 0);
+    Phaser.Display.Align.In.TopRight(gameState.menuIcon, this.add.zone(650, 300, 1300, 600), 0, 0);
     gameState.menuIcon.setInteractive();
 
     gameState.menuIcon.on('pointerover', () =>{
@@ -305,7 +305,7 @@ function createMenuIcon(){
         gameState.menuAudio.play();   
 
         gameState.menuWindow = this.add.image(100, 100, 'menuWindow');
-        Phaser.Display.Align.In.Center(gameState.menuWindow, this.add.zone(564, 308, 1128, 615));
+        Phaser.Display.Align.In.Center(gameState.menuWindow, this.add.zone(650, 300, 1300, 600));
         gameState.menuWindow.setScrollFactor(0);
 
         gameState.menuRestart = this.add.image(100, 100, 'menuRestart');
@@ -382,7 +382,7 @@ function createTimer(){
     gameState.totalTime = 600;
     gameState.timerDisplayBackdrop = this.add.rectangle(0, 0, 80, 30, 0xFFFFFF);
     gameState.timerDisplayBackdrop.setScrollFactor(0);
-    Phaser.Display.Align.In.TopCenter(gameState.timerDisplayBackdrop, this.add.zone(564, 308, 1128, 615), 0, -5);
+    Phaser.Display.Align.In.TopCenter(gameState.timerDisplayBackdrop, this.add.zone(650, 300, 1300, 600), 0, -5);
     gameState.timerDisplay = this.add.text(0, 0, "10:00", {font: "20px Verdana", fill: "#000000"});
     gameState.timerDisplay.setScrollFactor(0);
     Phaser.Display.Align.In.Center(gameState.timerDisplay, gameState.timerDisplayBackdrop);
@@ -415,7 +415,7 @@ function createTimer(){
                 //lose window
                 gameState.loseWindow = this.add.sprite(500, 100, 'winWindow');
                 gameState.loseWindow.setScrollFactor(0);
-                Phaser.Display.Align.In.Center(gameState.loseWindow, this.add.zone(564, 308, 1128, 615));
+                Phaser.Display.Align.In.Center(gameState.loseWindow, this.add.zone(650, 300, 1300, 600));
 
                 //lose text
                 gameState.loseText = this.add.text(500, 100, `Oops, you ran out of time!\nYou'll get it next time!`, {font: "30px Verdana", fill: "#000000", align: "center"});
@@ -471,7 +471,7 @@ function createTimer(){
                 gameState.winAudio.play();
                 gameState.winWindow = this.add.sprite(500, 100, 'winWindow');
                 gameState.winWindow.setScrollFactor(0);
-                Phaser.Display.Align.In.Center(gameState.winWindow, this.add.zone(564, 308, 1128, 615));
+                Phaser.Display.Align.In.Center(gameState.winWindow, this.add.zone(650, 300, 1300, 600));
 
                 //win text
                 gameState.winText = this.add.text(500, 100, `Congrats, you got the all the items in\n${gameState.timeString}!`, {font: "30px Verdana", fill: "#000000", align: "center"});

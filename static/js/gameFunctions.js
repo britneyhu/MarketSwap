@@ -580,7 +580,7 @@ function addShopWindow(shop){
         //create shop window
         gameState.shopWindow = this.add.sprite(500, 100, 'shopWindow');
         gameState.shopWindow.setScrollFactor(0);
-        Phaser.Display.Align.In.Center(gameState.shopWindow, this.add.zone(564, 308, 1128, 615));
+        Phaser.Display.Align.In.Center(gameState.shopWindow, this.add.zone(650, 300, 1300, 600));
 
         //create shop scene
         gameState.shopScene = this.add.sprite(500, 100, shop.sceneTexture);
@@ -693,7 +693,7 @@ function addShopWindow(shop){
         //create shop window
         gameState.shopWindow = this.add.sprite(500, 100, 'shopWindow');
         gameState.shopWindow.setScrollFactor(0);
-        Phaser.Display.Align.In.Center(gameState.shopWindow, this.add.zone(564, 308, 1128, 615));
+        Phaser.Display.Align.In.Center(gameState.shopWindow, this.add.zone(650, 300, 1300, 600));
 
         //create shop scene
         gameState.shopScene = this.add.sprite(500, 100, shop.sceneTexture);
